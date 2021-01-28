@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(#878f8c, #8e9ead), url('/images/world-image.jpg') no-repeat ;
+    background-size: cover;
+    background-blend-mode: multiply;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 320px;
+}
+
+header {
+    margin: 10rem 0 3rem;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+}
+
+select {
+    font-family: inherit;
+    padding: .5rem;
+    cursor: pointer;
+    outline: none;
+    width: 400px;
+    font-size: 1.3rem;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+
+}
+
+select option {
+    color: black;
+    font-size: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    width: auto;
+    max-width: 70vw;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 1rem;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    width: 90px;
+}
+
+.card:last-of-type {
+    margin-right: 0;
+}
+
+.country-image {
+    width: 90px;
+    height: 90px;
+    margin-bottom: .3rem;
+    transform: translateY(0);
+    transition: transform .2s ease-in-out;
+}
+
+.card p {
+    word-wrap: break-word;
+}
+
+.country-image:hover {
+    transform: translateY(-5%);
+}
+
+
+@media screen and (max-width: 760px) {
+    header {
+        margin-top: 5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    select {
+        width: 300px;
+    }
+}
